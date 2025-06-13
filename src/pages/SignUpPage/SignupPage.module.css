@@ -1,0 +1,200 @@
+
+.loginContainer {
+  display: flex;
+  /* background-size: cover;
+  background-position: center;
+  padding: 20px;
+  box-sizing: border-box;
+  background-repeat: no-repeat; */
+}
+
+.leftBox, .rightBox{
+  justify-items: center;
+  background-color: hsl(180, 23%, 92%);
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+ /* .formBox h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #333;
+  
+}  */
+
+.formBox input {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border: 1px solid #6c0b0b;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.nameRow {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.nameRow input {
+  flex: 1; /* Distribute space equally */
+  margin-bottom: 0; /* Remove extra margin */
+}
+
+.formBox button {
+  width: 100%;
+  padding: 12px 15px;
+  background-color:orange; /* Example primary color */
+  color: #150808;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.formBox button:hover {
+  background-color: #e9a30c;
+}
+
+.formBox small {
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.formBox small a {
+  color: blue;
+  text-decoration: none;
+}
+
+.formBox small a:hover {
+  text-decoration: underline;
+}
+
+.bottomLogin {
+  text-align: center;
+  margin-top: 20px;
+  color: #555;
+}
+
+.bottomLogin a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.bottomLogin a:hover {
+  font-size: large;
+  text-decoration: underline;
+}
+
+/* Right Box Styles */
+.rightBox h3 {
+  text-align: center;
+  color: #e9a30c;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+ h2 {
+ text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.rightBox p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+   color: #150808;
+}
+
+.rightBox ul {
+  
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+
+.rightBox ul li {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  position: relative;
+  padding-left: 20px;
+}
+
+.rightBox ul li::before {
+  content: '•'; 
+  color: black;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.howButton {
+  justify-items: auto;
+  background-color: orange;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+ 
+}
+
+.howButton:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+@media (min-width: 768px) {
+  .loginContainer {
+    padding: 40px;
+    justify-content: center; 
+    
+  }
+
+  .leftBox {
+    margin-bottom: 0; 
+    margin-right: 40px; 
+  }
+
+  .rightBox {
+    display: block; 
+    flex: 1; 
+    max-width: 500px; 
+  }
+
+  .howButton {
+    display: inline-block; 
+    margin: 0; 
+  }
+}
+
+@media (min-width: 1024px) {
+  .loginContainer {
+    justify-content: center; 
+  }
+
+  .leftBox {
+    max-width: 500px; 
+  }
+
+  .rightBox {
+    max-width: 600px; 
+  }
+} 
+ 

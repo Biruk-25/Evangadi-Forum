@@ -1,0 +1,226 @@
+
+.loginContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem;
+  box-sizing: border-box;
+  /* background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; */
+}
+
+/* LEFT SECTION */
+.leftBox {
+  background-color: #ebe5e5;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+
+/* RIGHT SECTION */
+.rightBox {
+  width: 50%;
+  padding: 2rem;
+  background: rgba(231, 223, 223, 0.582);
+  box-sizing: border-box;
+}
+
+
+.rightBox h5 {
+  color: orange;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.rightBox h2 {
+  color: #2c2c72;
+  margin: 0.5rem 0;
+}
+
+.rightBox p {
+  color: black;
+  font-size: 1rem;
+}
+
+.rightBox ul {
+  margin-left: 1rem;
+  color: black;
+  font-size: 0.95rem;
+}
+
+.rightBox li {
+  margin-bottom: 0.5rem;
+}
+/* FORM */
+.formBox {
+  text-align: center;
+  background: white;
+  padding: 3rem;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px; 
+  box-sizing: border-box;
+}
+
+.formBox form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.formBox input {
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.formBox button {
+  font: size 1rem;;
+  padding: 0.8rem;
+  background-color: #f27a1a;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+.formBox button:hover {
+  background-color: #e76c0a;
+}
+
+/* SHARED BUTTON */
+.howButton {
+  
+  margin-top: 1.5rem;
+  padding: 0.7rem 1.4rem;
+  background: #f27a1a;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.howButton:hover {
+  background-color: #e76c0a;
+}
+
+/* LINKS */
+.linkText {
+  color: orange;
+  margin-left: 5px;
+  text-decoration: none;
+}
+
+.linkText:hover {
+  text-decoration: underline;
+}
+
+.bottomLink:hover {
+  text-decoration: underline;
+}
+
+/* FEEDBACK */
+.error {
+  color: red;
+  font-size: 0.85rem;
+  margin-bottom: 10px;
+}
+
+.success {
+  color: green;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+/* SIGNUP TEXT */
+.formBox .signupText {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  color: black;
+}
+
+.formBox .signupText a {
+  color: orange;
+  text-decoration: none;
+  margin-left: 5px;
+  font-size: 1.1rem;
+}
+
+.formBox .signupText a:hover {
+  text-decoration: underline;
+}
+.passwordInputContainer {
+  position: relative;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+ .passwordInputContainer input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease;
+  padding-right: 40px;
+} 
+.passwordToggle {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #888;
+  font-size: 1.1rem;
+  z-index: 2;
+}
+
+/* ✅ RESPONSIVE STYLES */
+@media (max-width: 1024px) {
+  .leftBox,
+  .rightBox {
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .rightBox ul {
+    text-align: left;
+    padding-left: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .formBox {
+    padding: 1.5rem;
+  }
+
+   .rightBox h3 {
+    font-size: 1rem;
+  } 
+
+  .rightBox h2 {
+    font-size: 1.1rem;
+  }
+
+  .rightBox p,
+  .rightBox li {
+    font-size: 0.95rem;
+  }
+
+  .howButton {
+    width: 100%;
+    padding: 0.8rem;
+  }
+}
+
