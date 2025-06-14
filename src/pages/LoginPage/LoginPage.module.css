@@ -5,15 +5,15 @@
   justify-content: center;
   padding: 2rem;
   box-sizing: border-box;
-  /* background-size: cover;
+  background-size: cover;
   background-position: center;
-  background-repeat: no-repeat; */
+  background-repeat: no-repeat;
 }
 
 /* LEFT SECTION */
 .leftBox {
   background-color: #ebe5e5;
-  width: 50%;
+  width: 40%;
   display: flex;
   justify-content: center;
   padding: 1rem;
@@ -23,6 +23,7 @@
 
 /* RIGHT SECTION */
 .rightBox {
+  justify-items: center;
   width: 50%;
   padding: 2rem;
   background: rgba(231, 223, 223, 0.582);
@@ -51,7 +52,13 @@
   color: black;
   font-size: 0.95rem;
 }
-
+h3 {
+  color: #e76c0a;
+  font-size: larger;
+}
+.rightBox h3 {
+  font-size: 2rem;
+}
 .rightBox li {
   margin-bottom: 0.5rem;
 }
@@ -63,7 +70,7 @@
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   width: 100%;
-  max-width: 500px; 
+  max-width: 550px; 
   box-sizing: border-box;
 }
 
@@ -117,6 +124,7 @@
   color: orange;
   margin-left: 5px;
   text-decoration: none;
+  
 }
 
 .linkText:hover {
@@ -186,7 +194,7 @@
 }
 
 /* ✅ RESPONSIVE STYLES */
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .leftBox,
   .rightBox {
     width: 100%;
@@ -206,6 +214,7 @@
   }
 
    .rightBox h3 {
+   
     font-size: 1rem;
   } 
 

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import axios from '../../api/axiosConfig';
-//import bg from '../../assets/image/bg.jpg';
+import bg from '../../assets/image/bg.jpg';
 import MessageModal from '../../components/ModelComponent/MessageModal';
 import styles from "./SignupPage.module.css";
 
@@ -66,8 +66,9 @@ const SignupPage = () => {
 
   return (
     <div className={styles.loginContainer}
+      style={{ backgroundImage: `url(${bg})` }}
        >
-        {/* //style={{ backgroundImage: `url(${bg})` }} */}
+        
       <MessageModal
         show={modal.show}
         message={modal.message}
@@ -152,7 +153,7 @@ const SignupPage = () => {
           <li>Network with like-minded individuals on similar career and learning paths.</li>
         </ul>
         <p>
-          By combining mentorship, learning, and community support, Evangadi Networks fosters a culture of collaboration that helps members succeed—both in their careers and in their personal development.
+          By combining mentorship, learning, and community support, Evangadi Networks fosters a culture of collaboration that helps members succeed-both in their careers and in their personal development.
         </p>
         <button className={styles.howButton}>HOW IT WORKS</button>
       </div>

@@ -88,29 +88,24 @@ const LoginPage = () => {
                   onChange={handleChange}
                   required
                 />
-                {/* <input
-                  name="password"
-                  type="password"
-                  placeholder="Your Password"
-                  value={form.password}
-                  onChange={handleChange}
-                  required
-                /> */}
+               
                {/* Password input with visibility toggle */}
                 <div className={styles.passwordInputContainer}>
                   <input
                     name="password"
-                    type={showPassword ? "text" : "password"} // Conditional type
+                    type={showPassword ? "text" : "password"} 
                     placeholder="Your Password"
                     value={form.password}
                     onChange={handleChange}
                     required
                   />
                   <span
+                  // Toggle state
                     className={styles.passwordToggle}
-                    onClick={() => setShowPassword((prev) => !prev)} // Toggle state
+                    onClick={() => setShowPassword((prev) => !prev)} 
                   >
-                    {showPassword ? <FaEyeSlash /> : <FaEye />} {/* Conditional icon */}
+                    {/* Conditional icon */}
+                    {showPassword ? <FaEyeSlash /> : <FaEye />} 
                   </span>
                 </div>
                 <button type="submit">Login</button>
@@ -178,7 +173,7 @@ const LoginPage = () => {
           <li>Network with like-minded individuals on similar career and learning paths.</li>
         </ul>
         <p>
-          By combining mentorship, learning, and community support, Evangadi Networks fosters a culture of collaboration that helps members succeed—both in their careers and in their personal development.
+          By combining mentorship, learning, and community support, Evangadi Networks fosters a culture of collaboration that helps members succeed-both in their careers and in their personal development.
         </p>
         </div>
         <button className={styles.howButton}>HOW IT WORKS</button>

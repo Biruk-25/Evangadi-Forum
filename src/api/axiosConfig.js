@@ -20,25 +20,3 @@ axiosBase.interceptors.request.use(
 
 export default axiosBase;
 
-
-// import axios from 'axios';
-
-// const axiosBase = axios.create({
-//   baseURL: 'http://localhost:5000/api',
-// });
-
-// axiosBase.interceptors.request.use((config) => {
-//   const token = localStorage.getItem('token');
-   
-//   if (token) {
-//     config.headers['Authorization'] = `Bearer ${token}`;
-//     //config.headers.Authorization = `Bearer ${token}`;
-   
-
-//   }
-//   return config;
-// },
-// (error) => Promise.reject(error)
-// );
-
-// export default axiosBase;
