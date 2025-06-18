@@ -14,10 +14,10 @@ const Footer = () => {
             <a href="#" className={styles.socialIcon}>
               <FontAwesomeIcon icon={faFacebook} size="lg" />
             </a>
-            <a href="#" className={styles.socialIcon}>
+            <a href="https://www.instagram.com/evangaditech" className={styles.socialIcon}>
               <FontAwesomeIcon icon={faInstagram} size="lg" />
             </a>
-            <a href="#" className={styles.socialIcon}>
+            <a href="https://www.youtube.com/evangaditech" className={styles.socialIcon}>
               <FontAwesomeIcon icon={faYoutube} size="lg" />
             </a>
           </div>
@@ -27,9 +27,9 @@ const Footer = () => {
         <div className={styles.section}>
           <h4 className={styles.sectionTitle}>Useful Links</h4>
           <ul className={styles.linkList}>
-            <li><a href="#">How it Works</a></li>
-            <li><a href="#">Terms of Service</a></li>
-            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="https://evangaditech.com/">How it Works</a></li>
+            <li><a href="#https://evangaditech.com/">Terms of Service</a></li>
+            <li><a href="https://evangaditech.com/">Privacy Policy</a></li>
           </ul>
         </div>
 

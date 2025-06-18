@@ -3,11 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import Elog from '../../assets/image/Elog.png';
 import { AuthContext } from '../../context/AuthContext';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faHome,
-  faSignInAlt,
-  faSignOutAlt
-} from '@fortawesome/free-solid-svg-icons';
+import {faHome, faSignInAlt, faSignOutAlt} from '@fortawesome/free-solid-svg-icons';
 import styles from "./Header.module.css";
 
 const Header = () => {

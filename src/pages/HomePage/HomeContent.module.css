@@ -52,6 +52,30 @@
   padding: 0;
   margin: 0;
 }
+.searchWrapper {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  margin: 20px 0;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  opacity: 0.6;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 10px 10px 10px 40px;
+  font-size: 16px;
+  border: 1px solid #ecca09db;
+  border-radius: 8px;
+}
 
 .listItem {
   display: flex;
@@ -67,6 +91,13 @@
 .listItem:hover {
   background-color: #f9f9f9;
 }
+.link {
+  display: flex;
+  text-decoration: none;
+  color: inherit;
+}
+
+
 
 .avatar {
   width: 40px;
@@ -107,4 +138,73 @@
   font-size: 14px;
   color: #555;
   margin-top: 4px;
+}
+.paginationWrapper {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.pageButton {
+  padding: 8px 14px;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  color: #333;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.pageButton:hover {
+  background-color: #e0e0e0;
+  transform: scale(1.05);
+}
+
+.active {
+  background-color: #fb8702ec;
+  border-color: #007bff;
+  color: #fff;
+  font-weight: bold;
+  transform: scale(1.05);
+}
+.actionButtons {
+  display: flex;
+  gap: 8px;
+  margin-left: auto;
+}
+
+.iconButton {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.25s ease, transform 0.15s ease;
+  font-weight: 500;
+}
+
+.editButton {
+  background-color: #e7f1ff;
+  color: #007bff;
+}
+
+.editButton:hover {
+  background-color: #d0e7ff;
+  transform: translateY(-1px);
+}
+
+.deleteButton {
+  background-color: #ffe8e8;
+  color: #dc3545;
+}
+
+.deleteButton:hover {
+  background-color: #ffc8c8;
+  transform: translateY(-1px);
 }

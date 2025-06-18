@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import axios from '../../api/axiosConfig';
 import bg from '../../assets/image/bg.jpg';
@@ -30,6 +30,12 @@ const SignupPage = () => {
     const { name, value } = e.target;
     setForm((prev) => ({ ...prev, [name]: value }));
   };
+     useEffect(() => {
+    const token = localStorage.getItem("token");
+    if (token) {
+      navigate("/", { replace: true });
+    }
+  }, []);
 
   const validateForm = () => {
     if (!form.email.includes('@')) {

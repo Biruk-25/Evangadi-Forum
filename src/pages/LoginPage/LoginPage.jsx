@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import axios from '../../api/axiosConfig';
 import MessageModal from '../../components/ModelComponent/MessageModal';
@@ -30,6 +30,12 @@ const LoginPage = () => {
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    if (token) {
+      navigate("/", { replace: true });
+    }
+  }, []);
 
   // Handle login form submit
   const handleLoginSubmit = async (e) => {
@@ -176,13 +182,16 @@ const LoginPage = () => {
           By combining mentorship, learning, and community support, Evangadi Networks fosters a culture of collaboration that helps members succeed-both in their careers and in their personal development.
         </p>
         </div>
-        <button className={styles.howButton}>HOW IT WORKS</button>
+       <button
+                 className={styles.howButton}
+              onClick={() => window.open("https://www.evangadi.com")}>
+              HOW IT WORKS
+                 </button>
       </div>
     </div>
   );
 };
 
 export default LoginPage;
-
 
 

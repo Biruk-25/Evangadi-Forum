@@ -1,15 +1,16 @@
 
 import React, { useContext, useEffect, createContext } from 'react';
 import { Routes, Route, useNavigate, useLocation } from 'react-router-dom';
-
-import SignUpPage from './pages/SignUpPage/SignupPage';
 import LoginPage from './pages/LoginPage/LoginPage';
+import SignUpPage from './pages/SignUpPage/SignupPage';
 import AskQuestion from './pages/AskPage/AskQuestionPage';
 import QuestionDetailPage from './pages/QuestionDetailPage/QuestionDetailPage';
 import HomeContent from './pages/HomePage/HomeContent';
 import Footer from './components/footerComponent/Footer';
 import Header from './components/HeaderComponent/Header';
 import { AuthContext } from './context/AuthContext';
+import EditQuestion from './pages/EditQuestion/EditQuestion';
+
 import api from './api/axiosConfig';
 export const AppState = createContext();
 
@@ -70,9 +71,10 @@ function App() {
           <Routes>
             <Route path="/" element={<HomeContent />} />
             <Route path="/signup" element={<SignUpPage />} />
-            <Route path="/login" element={<LoginPage />} />
+            <Route path="/login" element={<LoginPage />} /> 
             <Route path="/ask" element={<AskQuestion />} />
             <Route path="/question/:id" element={<QuestionDetailPage />} />
+            <Route path="/edit-question/:id" element={<EditQuestion />} />
             <Route
               path="/how-it-works"
               element={
