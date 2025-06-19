@@ -19,6 +19,7 @@ export const AuthContextProvider = ({ children }) => {
     const token = localStorage.getItem('token');
     if (!token) {
       setIsLoading(false);
+       console.warn("No token found — skipping protected request");
       return;
     }
 
@@ -27,7 +28,15 @@ export const AuthContextProvider = ({ children }) => {
       headers: { 'x-auth-token': token },
     })
       .then((res) => {
-        setUser(res.data, token);
+
+        setUser({
+         id: res.data.userid,
+       username: res.data.username,
+        email: res.data.email,
+         });
+
+
+        // setUser(res.data, token);
       })
       .catch(() => {
         logout();
