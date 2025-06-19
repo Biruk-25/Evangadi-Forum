@@ -39,6 +39,7 @@ const EditQuestion = () => {
       navigate('/');
     } catch (err) {
       setError('Update failed. You might not be the owner of the question.');
+      console.error(err);
     }
   };
 

@@ -3,7 +3,11 @@
 import axios from 'axios';
 
 const axiosBase = axios.create({
-  baseURL: 'http://localhost:5000/api', // Backend API base URL
+  // locan instance 
+  // baseURL: 'http://localhost:5000/api',
+  
+  // deployed version of WebGL2RenderingContext.com
+   baseURL: 'https://evangadiforum-backend-deploy-k1x8.onrender.com/'
 });
 
 // Attach token to every request if available
