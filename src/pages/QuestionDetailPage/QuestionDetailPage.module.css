@@ -136,4 +136,13 @@
 .button:hover {
   background: #005bb5;
 }
+.seeMoreButton {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 12px;
+  margin-top: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
 

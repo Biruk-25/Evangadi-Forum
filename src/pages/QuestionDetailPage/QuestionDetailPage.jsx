@@ -17,6 +17,7 @@ const QuestionDetailPage = () => {
   const [answers, setAnswers] = useState([]);
   const [loading, setLoading] = useState(true);
   const [answerText, setAnswerText] = useState('');
+  const [visibleAnswers, setVisibleAnswers] = useState(5);
   const [modal, setModal] = useState({ show: false, message: '', type: '' });
 
   useEffect(() => {
@@ -167,7 +168,15 @@ const QuestionDetailPage = () => {
           <button type="submit" className={styles.button}>
             Post Your Answer
           </button>
-        </form>
+          </form>
+           {visibleAnswers < answers.length && (
+          <button
+          className={styles.seeMoreButton}
+          onClick={() => setVisibleAnswers((prev) => prev + 5)}>
+          See More Answers
+         </button>
+          )}
+
       </div>
     </div>
   );
