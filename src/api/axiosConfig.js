@@ -30,10 +30,7 @@ import axios from 'axios';
 
 const axiosBase = axios.create({
   // baseURL for deployed backend with /api prefix
-  // baseURL: 'https://evangadiforum-backend-deploy-k1x8.onrender.com/api'
-  
-   baseURL: 'https://evangadiforum-backend-deploy-2-atdb.onrender.com/api' 
-  //  baseURL: 'http://localhost:5000/api',
+    baseURL: 'https://evangadiforum-backend-deploy-2-atdb.onrender.com/api' 
 });
 
 // Attach token to every request if available
