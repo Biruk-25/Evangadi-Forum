@@ -4,7 +4,7 @@ import axios from 'axios';
 
 const axiosBase = axios.create({
   // baseURL for deployed backend with /api prefix
-    baseURL: 'https://evangadiforum-backend-deploy-1-upvs.onrender.com/api' 
+    baseURL: 'https://evangadiforum-backend-deploy-1-rvjt.onrender.com/api' 
     //baseURL: 'http://localhost:5000/api',
 });
 

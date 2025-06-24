@@ -15,7 +15,7 @@ export const AuthContextProvider = ({ children }) => {
 
   useEffect(() => {
    
-
+   console.log("Current user:", user);
     const token = localStorage.getItem('token');
     if (!token) {
       setIsLoading(false);
