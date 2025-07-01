@@ -169,15 +169,7 @@ const QuestionDetailPage = () => {
             Post Your Answer
           </button>
           </form>
-           {/* {visibleAnswers < answers.length && (
-          <button
-          className={styles.seeMoreButton}
-          onClick={() => setVisibleAnswers((prev) => prev + 5)}>
-          See More Answers
-         </button>
-          )} */}
-
-      </div>
+        </div>
     </div>
   );
 };

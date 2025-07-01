@@ -70,7 +70,21 @@ const LoginPage = () => {
     <div className={styles.loginContainer}
     style={{ backgroundImage: `url(${bg})` }}
   >
-    
+    {/* ALERT BANNER */}
+
+     <div
+      style={{
+        backgroundColor: '#ffcccb',
+        color: 'black',
+        padding: '10px',
+        textAlign: 'center',
+        fontWeight: 'bold',
+      }}
+    >
+      ⚠️ This is a portfolio project for educational purposes only. Do not enter real personal information. ⚠️
+    </div>
+      {/* existing modal */}
+
       <MessageModal
         show={modal.show}
         message={modal.message}
