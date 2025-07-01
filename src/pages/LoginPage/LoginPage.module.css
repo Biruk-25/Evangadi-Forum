@@ -10,6 +10,18 @@
   background-repeat: no-repeat;
 }
 
+/* LoginPage.module.css */
+
+.disclaimerBanner {
+  background-color: #ffcccb;
+  color: black;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  border-bottom: 2px solid #d9534f;
+  font-size: 0.6rem;
+}
+
 /* LEFT SECTION */
 .leftBox {
   background-color: #ebe5e5;

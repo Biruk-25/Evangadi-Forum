@@ -70,19 +70,7 @@ const LoginPage = () => {
     <div className={styles.loginContainer}
     style={{ backgroundImage: `url(${bg})` }}
   >
-    {/* ALERT BANNER */}
-
-     <div
-      style={{
-        backgroundColor: '#ffcccb',
-        color: 'black',
-        padding: '10px',
-        textAlign: 'center',
-        fontWeight: 'bold',
-      }}
-    >
-      ⚠️ This is a portfolio project for educational purposes only. Do not enter real personal information. ⚠️
-    </div>
+      
       {/* existing modal */}
 
       <MessageModal
@@ -96,6 +84,8 @@ const LoginPage = () => {
         <div className={styles.formBox}>
           {!showForgotForm ? (
             <>
+             {/* ALERT BANNER */}
+            <p className={styles.disclaimerBanner}>⚠️ This is a portfolio project for educational purposes only. Do not enter real personal information. ⚠️</p>
               <h3>Login to your account</h3>
            
               {/* Login Form */}
